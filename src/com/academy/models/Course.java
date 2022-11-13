@@ -1,6 +1,7 @@
 package com.academy.models;
 
 public class Course {
+
     private long ID;
     public static long counter;
 
