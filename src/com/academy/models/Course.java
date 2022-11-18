@@ -8,7 +8,11 @@ public class Course {
     private Student student;
     private Lecture lecture;
 
-    public Course() {
-        ID = counter++;
+    public Course(long ID) {
+        this.ID = ID;
     }
+
+    public long getID() {
+        return ID;
     }
+}

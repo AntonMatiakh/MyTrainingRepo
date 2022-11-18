@@ -1,14 +1,20 @@
+import com.academy.models.Course;
 import com.academy.models.Lecture;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Lecture firstLecture = new Lecture();
-        Lecture secondLecture = new Lecture();
-        Lecture thirdLecture = new Lecture();
-        Lecture fourthLecture = new Lecture();
+        Course firstCourse = new Course(777l);
 
-        System.out.println(Lecture.counter);
+        Lecture firstLecture = new Lecture(firstCourse.getID());
+        Lecture secondLecture = new Lecture(firstCourse.getID());
+        Lecture thirdLecture = new Lecture(firstCourse.getID());
+        Lecture fourthLecture = new Lecture(firstCourse.getID());
+        Lecture fifthLecture = new Lecture(firstCourse.getID());
+        Lecture sixthLecture = new Lecture(firstCourse.getID());
+
+        System.out.println("Number of lectures: " + Lecture.counter);
+        System.out.println("Sixth lecture's id: " + sixthLecture.courseID);
     }
 }
