@@ -21,6 +21,5 @@ public class Main {
 
         System.out.println("Number of lectures: " + Lecture.counter);
         System.out.println("Sixth lecture's id: " + sixthLecture.courseID);
-
     }
 }
