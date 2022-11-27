@@ -4,13 +4,14 @@ public class Course {
 
     private long ID;
     public static long counter;
-    public String name;
+    private String name;
 
     private Teacher teacher;
     private Student student;
     private Lecture lecture;
 
-    public Course(long ID) {
+    public Course(String name, long ID) {
+        this.name = name;
         this.ID = ID;
     }
 
