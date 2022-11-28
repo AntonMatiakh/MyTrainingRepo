@@ -1,10 +1,16 @@
 package com.academy.services;
 
-import com.academy.models.Lecture;
-
 public class LectureService {
-
-//    public Lecture createLecture(String name, long ID, long courseID){
-//        return new Lecture(name, ID, courseID);
-//    }
+    public void findLecture(String enteredName) {
+        switch (enteredName) {
+            case "Introduction":
+                System.out.println("First");
+                break;
+            case "Variables":
+                System.out.println("Second");
+                break;
+            default:
+                System.out.println("Sorry, nothing found");
+        }
+    }
 }

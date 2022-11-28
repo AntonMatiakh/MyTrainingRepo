@@ -16,4 +16,9 @@ public class Lecture {
         this.courseID = courseID;
         counter++;
     }
+
+    public String getName() {
+        return name;
+    }
+
 }

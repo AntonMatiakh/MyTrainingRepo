@@ -2,26 +2,50 @@ import com.academy.models.Course;
 import com.academy.models.Lecture;
 import com.academy.services.LectureService;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
 
-        Course firstCourse = new Course("English",777l);
+        Course firstCourse = new Course("JAVA", 777l);
 
-        Lecture firstLecture = new Lecture("Present_Simple", 1l, firstCourse.getID());
-        Lecture secondLecture = new Lecture("Present_Continuous", 2l, firstCourse.getID());
-        Lecture thirdLecture = new Lecture("Present_Perfect", 3l, firstCourse.getID());
-        Lecture fourthLecture = new Lecture("Past_Simple", 4l, firstCourse.getID());
-        Lecture fifthLecture = new Lecture("Past_Continuous", 5l, firstCourse.getID());
-        Lecture sixthLecture = new Lecture("Future_Simple", 6l, firstCourse.getID());
+        Lecture firstLecture = new Lecture("Introduction", 1l, firstCourse.getID());
+        Lecture secondLecture = new Lecture("Variables", 2l, firstCourse.getID());
+        Lecture thirdLecture = new Lecture("DataTypes", 3l, firstCourse.getID());
+        Lecture fourthLecture = new Lecture("Git", 4l, firstCourse.getID());
+        Lecture fifthLecture = new Lecture("GitHub", 5l, firstCourse.getID());
+        Lecture sixthLecture = new Lecture("Methods", 6l, firstCourse.getID());
 
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter lecture name:");
+//        String enteredName = scanner.nextLine();
+//        if (enteredName.equals("Introduction")){
+//            System.out.println(firstLecture);
+//            System.out.println(firstLecture.getName() + " " + firstLecture.courseID);
+//        } else {
+//            System.out.println("Sorry, nothing found");
+//        }
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter lecture name:");
+//        String enteredName = scanner.nextLine();
+//        switch (enteredName) {
+//            case "Introduction":
+//                System.out.println(firstLecture);
+//                break;
+//            case "Variables":
+//                System.out.println(secondLecture);
+//                break;
+//            default:
+//                System.out.println("Sorry, nothing found");
+//        }
+
+//        Scanner scanner = new Scanner(System.in);
 //        LectureService lectureService = new LectureService();
-//
-//        Lecture lecture1 = lectureService.createLecture("PS", 1l, firstCourse.getID());
-//        Lecture lecture2 = lectureService.createLecture("PC", 2l, firstCourse.getID());
-//        Lecture lecture3 = lectureService.createLecture("PP", 3l, firstCourse.getID());
-//        Lecture lecture4 = lectureService.createLecture("Past_S", 4l, firstCourse.getID());
-//        Lecture lecture5 = lectureService.createLecture("Past_C", 5l, firstCourse.getID());
-//        Lecture lecture6 = lectureService.createLecture("FS", 6l, firstCourse.getID());
+//        System.out.println("Enter lecture name:");
+//        String enteredName = scanner.nextLine();
+//        lectureService.findLecture(enteredName);
+
     }
 }
