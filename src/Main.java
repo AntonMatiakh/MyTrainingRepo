@@ -8,7 +8,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Course firstCourse = new Course("Java", 777);
+        Course firstCourse = new Course("Java", 2022);
 
         LectureService lectureService = new LectureService();
 
@@ -43,7 +43,6 @@ public class Main {
             default:
                 System.out.println("Sorry, nothing found... :(");
         }
-        // lectureService.selectCategory(category);
 
         System.out.println("We have already " + Lecture.counter + " lectures");
         System.out.println("Would you like to create new lecture?");
