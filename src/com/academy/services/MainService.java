@@ -72,6 +72,8 @@ public class MainService {
         } else {
             System.out.println("Unfortunately, something went terribly wrong... :(");
             System.out.println("------------------------END-----------------------");
+
+            scanner.close();
         }
     }
 }
