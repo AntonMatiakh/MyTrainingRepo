@@ -1,13 +1,10 @@
 import com.academy.models.Course;
 import com.academy.models.Lecture;
-import com.academy.services.LectureService;
 import com.academy.services.MainService;
 
 public class Main {
 
     public static void main(String[] args) {
-
-        LectureService lectureService = new LectureService();
 
         Course firstCourse = new Course("Java", 2022l);
 
